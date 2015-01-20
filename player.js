@@ -112,7 +112,7 @@ var playTone = function(frequency, duration, audioContext) {
 };
 
 // Setup a single shared audio context for the juke box.
-var jukeboxAudioContext = new webkitAudioContext();
+var jukeboxAudioContext = new AudioContext();
 
 // Play a given song at "bpm" beats per minute.
 // Calls "onComplete" when the song is over.
